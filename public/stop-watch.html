@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: #2C1338;
+            color: white;
+            font-family: sans-serif;
+
+
+        }
+
+        .container {
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-left: 25px;
+        }
+
+        .timer {
+
+
+            padding: 15px;
+            font-size: 105px;
+            width: 3200px;
+        }
+
+        .juhi {
+            display: flex;
+        }
+
+        /* button{
+          
+            padding: 50px;
+            border-radius: 200px;    
+        } */
+
+        .btn1 {
+            background-color: #FFFFFF;
+            border-radius: 45px;
+            padding: 10px;
+            width: 145px;
+        }
+
+        .btn {
+            background-color: #E57CD8;
+            border-radius: 45px;
+            padding: 10px;
+            width: 140px;
+        }
+
+        .btn:hover {
+            background-color: #564260;
+            font-size: 18px;
+        }
+
+        .btn1:hover {
+            background-color: #564260;
+            font-size: 17px;
+            font-family: sans-serif;
+            
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        .btnContainer{
+            display: flex;
+            justify-content: center;
+            grid: 25px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div>
+        <h1>Stopwatch</h1>
+        <div class="container">
+            <div class="timer">
+                <span>0: </span>hr
+            </div>
+            <div class="timer">
+                <span>0: </span>m
+            </div>
+            <div class="timer ">
+                <span> 000</span> <span>ms</span>
+            </div>
+        </div>
+        <div class="btnContainer">
+            <button onclick="startClick()" class="btn">Pause</button>
+            <button onclick="clearClick()" class="btn1">reset</button>
+        </div>
+    </div>
 </body>
+
 </html>
