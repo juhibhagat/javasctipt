@@ -18,14 +18,15 @@
         document.getElementById("p1").innerText="volume of 90%";
     }
     function volumetextchange(){
-        volumechange();
-        volumechange1();
-        volumechange2();
+        setTimeout( volumechange,1000);
+        setTimeout(volumechange1,2000);
+        setTimeout(volumechange,3000);
     }
    </script>
 </head>
 <body>
     <button class="bi bi-volume-up " onclick="volumetextchange()">volumeup</button>
     <p id="p1"></p>
+
 </body>
 </html>
