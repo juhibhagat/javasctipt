@@ -9,13 +9,13 @@
     
    <script>
     function volumechange(){
-        document.getElementById("p").innerText="volume of 30%"
+        document.getElementById("p1").innerText="volume of 30%"
     }
        function volumechange1(){
-        document.getElementById("p").innerText="volume of 60%"
+        document.getElementById("p1").innerText="volume of 60%"
     }
     function volumechange2(){
-        document.getElementById("p").innerText="volume of 90%";
+        document.getElementById("p1").innerText="volume of 90%";
     }
     function volumetextchange(){
         volumechange();
@@ -26,6 +26,6 @@
 </head>
 <body>
     <button class="bi bi-volume-up " onclick="volumetextchange()">volumeup</button>
-    <p></p>
+    <p id="p1"></p>
 </body>
 </html>
